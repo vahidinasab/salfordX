@@ -1,0 +1,25 @@
+:root {
+  --bg: #0b0c10;
+  --panel: #111318;
+  --text: #e7e9ee;
+  --muted: #b9becc;
+  --accent: #e31c3d; /* Salford red vibe */
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+.container { max-width: 1080px; margin: 0 auto; padding: 1rem; }
+a { color: var(--text); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header, .site-footer { background: var(--panel); border-bottom: 1px solid #1e2230; }
+.site-footer { border-top: 1px solid #1e2230; border-bottom: none; margin-top: 2rem; }
+.navbar { display: flex; align-items: center; gap: 1rem; }
+.brand { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; }
+.nav { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; margin: 0; padding: 0; }
+main.container { padding-top: 1.25rem; }
+h1, h2, h3 { line-height: 1.25; }
+.callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1rem 0; }
+.card { background: #12151d; border: 1px solid #1e2230; border-radius: 14px; padding: 1rem; }
+.button-row { display: flex; gap: .75rem; margin: 1rem 0; }
+.button { display: inline-block; padding: .6rem .9rem; border-radius: 10px; border: 1px solid #2a2f40; background: #141826; }
+.button.primary { background: var(--accent); color: white; border-color: var(--accent); }
+small, .muted { color: var(--muted); }

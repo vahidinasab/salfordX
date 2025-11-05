@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>salfordX</strong><br>Centre for Research on Self‑Sustaining Systems & Societies</p>
+    <p>Hyperlocal energy neighbourhoods, citizen-led flexibility, V2X, digital twins and dynamic LCA, accelerating a fair, affordable and resilient transition.</p>
+    <nav class="footer-nav">
+      <ul>
+        {% for item in site.data.nav %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <p>&copy; {{ site.time | date: '%Y' }} salfordX · Built for GitHub Pages · <a href="{{ '/privacy/' | relative_url }}">Privacy</a></p>
+  </div>
+</footer>

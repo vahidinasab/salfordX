@@ -1,0 +1,8 @@
+title: "salfordX — Centre for Research on Self‑Sustaining Systems & Societies"
+url: "https://vahidinasab.github.io"
+baseurl: "/salfordX"
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
